@@ -614,6 +614,7 @@ return arr1;
 function arr_sort(arr3)
 {
   var tmp;
+  var arr4=[];
 for(var i = 0; i < arr3.length; i++){
   for(var j = i + 1; j < arr3.length; j++){
 
@@ -623,8 +624,9 @@ for(var i = 0; i < arr3.length; i++){
       arr3[j].id = tmp;
     }
   }
+  arr4.push(arr3[i]);
 }
-console.log(arr3);
+console.log(arr4);
 }
 var arr2=random(arr);
 arr_sort(arr2);
