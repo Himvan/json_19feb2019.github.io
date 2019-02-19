@@ -614,19 +614,19 @@ return arr1;
 function arr_sort(arr3)
 {
   var tmp;
-  var arr4=[];
+  
 for(var i = 0; i < arr3.length; i++){
   for(var j = i + 1; j < arr3.length; j++){
 
     if(arr3[i].id > arr3[j].id){
-      tmp = arr3[i].id;
-      arr3[i].id = arr3[j].id;
-      arr3[j].id = tmp;
+      tmp = arr3[i];
+      arr3[i]= arr3[j];
+      arr3[j]= tmp;
     }
   }
-  arr4.push(arr3[i]);
+ 
 }
-console.log(arr4);
+console.log(arr3);
 }
 var arr2=random(arr);
 arr_sort(arr2);
